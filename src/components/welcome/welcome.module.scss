@@ -1,0 +1,81 @@
+@import "/src/styles/mixins/padding.scss";
+@import "/src/styles/mixins/responsive.scss";
+@import "/src/styles/mixins/fonts.scss";
+@import "/src/styles/mixins/colors.scss";
+
+.container {
+  @include Padding;
+  height: 100vh;
+  padding-top: 219px;
+  background-image: url("/images/BACKGROUND__WELCOME_4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
+  @include Phone {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    background-image: url("/images/BACKGROUND__WELCOME_4.png");
+    background-position: 80%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  @include Tablet {
+    height: 100%;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+  }
+
+  @include Laptop {
+    padding-top: 6rem;
+  }
+}
+
+.text {
+  display: block;
+  h1 {
+    @include SizeExtra;
+    text-shadow: 0 0 1rem $gray2-color, 0 0 1.5rem $yellow-color;
+
+    @include Phone {
+      text-shadow: 0 0 1rem $gray2-color, 0 0 1.5rem $yellow-color;
+      font-size: 2rem;
+      color: white;
+      padding-top: 8rem;
+    }
+  }
+
+  p {
+    @include SizeNormal;
+    text-shadow: 0 0 1rem $gray2-color, 0 0 1.5rem $yellow-color;
+    opacity: 1;
+    @include Phone {
+      // text-shadow: 2px 1px $yellow-color;
+      text-shadow: 0 0 3px $gray2-color, 0 0 1.5rem $yellow-color;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fefefe;
+    }
+    
+  }
+}
+
+.image {
+  text-align: end;
+  display: none;
+
+  @include Phone {
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+    // display: flex;
+  }
+}
