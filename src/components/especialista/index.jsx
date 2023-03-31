@@ -9,10 +9,13 @@ const Especialista = () => {
       <div className={Styles.text}>
         <h1>Dr. Jacob Miguel Machado</h1>
         <p>
-            Professor e advogado altamente qualificado e especializado em 
+          Advogado e professor especializado em Planejamento Patrimonial,
+          Holdings Familiares, Direito Empresarial e Processo Civil, com
+          vasta experiência em casos complexos envolvendo empresas e grandes famílias.
+            {/* Professor e advogado altamente qualificado e especializado em 
             Planejamento Patrimonial, Holdings Familiares, 
             Direito Empresarial e Processo Civil. 
-            Ele possui vasta experiência profissional em diversas causas complexas envolvendo grandes famílias e empresas.
+            Ele possui vasta experiência profissional em diversas causas complexas envolvendo grandes famílias e empresas. */}
         </p>
         <Button
           title="Conheça nosso Especialista"

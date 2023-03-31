@@ -49,9 +49,9 @@
       @include SizeExtra;
       font-weight: bold;
       @include Phone {
-        padding-top: 30rem;
+        padding-top: 20rem;
         color: $white-color;
-        font-size: 2rem;
+        font-size: 2.3rem;
         text-shadow: 0 0 3px $gray2-color, 0 0 3rem  $yellow-color;
       }
     }
@@ -60,7 +60,8 @@
       @include SizeNormal;
       opacity: 0.9;
       @include Phone {
-       padding-bottom: 1rem;
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
         font-weight: 300;
       }
     }
